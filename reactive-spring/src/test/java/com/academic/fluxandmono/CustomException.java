@@ -1,4 +1,4 @@
-package com.fluxandmono;
+package com.academic.fluxandmono;
 
 public class CustomException extends Throwable {
 

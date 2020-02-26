@@ -1,4 +1,4 @@
-package com.fluxandmono;
+package com.academic.fluxandmono;
 
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;

@@ -1,4 +1,4 @@
-package com.fluxandmono;
+package com.academic.fluxandmono;
 
 import java.util.Arrays;
 import java.util.List;
