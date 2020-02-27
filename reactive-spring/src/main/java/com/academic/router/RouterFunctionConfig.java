@@ -16,12 +16,12 @@ import com.academic.handler.ManejadorFunction;
 public class RouterFunctionConfig {
 
 	@Bean
-	public RouterFunction<ServerResponse> route(ManejadorFunction manejadorFunction) {
+    public RouterFunction<ServerResponse> route(ManejadorFunction handlerFunction){
 
-		return RouterFunctions
-				.route(GET("/functional/flux").and(accept(MediaType.APPLICATION_JSON)), manejadorFunction::flux)
-				.andRoute(GET("/functional/mono").and(accept(MediaType.APPLICATION_JSON)), manejadorFunction::mono);
+        return RouterFunctions
+                .route(GET("/functional/flux").and(accept(MediaType.APPLICATION_JSON)),handlerFunction::flux)
+                .andRoute(GET("/functional/mono").and(accept(MediaType.APPLICATION_JSON)),handlerFunction::mono);
 
-	}
+    }
 
 }
